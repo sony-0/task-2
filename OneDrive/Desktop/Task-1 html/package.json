@@ -1,0 +1,20 @@
+{
+  "name": "task-1html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sony-0/task.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sony-0/task/issues"
+  },
+  "homepage": "https://github.com/sony-0/task#readme",
+  "keywords": [],
+  "description": ""
+}

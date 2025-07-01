@@ -1,0 +1,34 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic To-Do List</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        ul { list-style-type: none; }
+    </style>
+</head>
+<body>
+    <h1>Dynamic To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add new task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById('taskInput');
+            const taskText = taskInput.value;
+            if (taskText) {
+                const li = document.createElement('li');
+                li.textContent = taskText;
+                li.onclick = function() {
+                    this.remove(); // Remove task on click
+                };
+                document.getElementById('taskList').appendChild(li);
+                taskInput.value = ''; // Clear input field
+            }
+        }
+    </script>
+</body>
+</html>
